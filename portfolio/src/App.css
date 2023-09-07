@@ -1,6 +1,7 @@
 body {
   background: #f1f1f1;
   overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -10,6 +11,11 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+nav .link {
+  text-decoration-line: none;
+  display: block;
+  width: 120px;
 }
 nav .nav-container {
   height: 100%;
@@ -24,7 +30,7 @@ nav .nav-container .links {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3px;
+  padding: 5px;
   background: #f4f5fA;
   border-radius: 30px;
   justify-content: space-evenly;
@@ -33,12 +39,12 @@ nav .nav-container .links {
 }
 nav .nav-container .links p {
   text-align: center;
-  padding: 8px;
-  width: 100px;
-  margin: 5px 10px 5px 10px;
+  padding: 10px;
+  width: 90px;
+  margin: 5px 0px 5px 3px;
   font-size: 18px;
   font-weight: 600;
-  color: #7863e4;
+  color: #363746;
   border-radius: 20px;
   transition: 0.2s ease-in-out;
 }
@@ -51,7 +57,16 @@ nav .nav-container .socials {
   align-items: center;
   justify-content: space-evenly;
 }
-nav .nav-container .socials p {
+nav .nav-container .socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration-line: none;
+  text-align: center;
+  height: 50px;
+  margin: 0px 10px 0px 10px;
+}
+nav .nav-container .socials a p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,14 +76,14 @@ nav .nav-container .socials p {
   font-size: 18px;
   border-radius: 50%;
   padding: 10px;
-  margin-left: 20px;
-  color: #7863e4;
+  margin-left: 10px;
+  color: #363746;
   box-shadow: #c2c1eb 3px 3px 6px 0px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
   transition: 0.5s ease-in-out;
   font-weight: 500;
   cursor: pointer;
 }
-nav .nav-container .socials p:hover {
+nav .nav-container .socials a p:hover {
   transform: rotateY(360deg);
 }
 
@@ -80,6 +95,11 @@ nav .nav-container .socials p:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+.hero .link {
+  text-decoration-line: none;
+  display: block;
+  width: 100px;
 }
 .hero .top {
   height: 45%;
@@ -98,14 +118,15 @@ nav .nav-container .socials p:hover {
   box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
 }
 .hero .top .intro h1 {
-  color: #7863e4;
-  margin-top: 100px;
-  padding-left: 20px;
+  color: #363746;
+  margin-top: 90px;
+  padding: 0px 0px 0px 30px;
+  margin-bottom: 10px;
 }
 .hero .top .intro p {
-  color: #7863e4;
+  color: #363746;
   opacity: 0.9;
-  padding-left: 20px;
+  padding: 0px 0px 0px 30px;
 }
 .hero .top .works {
   height: 100%;
@@ -122,16 +143,16 @@ nav .nav-container .socials p:hover {
   height: 50%;
   width: 100%;
 }
-.hero .top .works .img #boot-icon {
-  font-size: 100px;
+.hero .top .works .img .icon-work {
+  font-size: 80px;
   color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
-  background-image: -webkit-linear-gradient(top, rgb(120, 99, 228), rgb(120, 99, 228));
+  background-image: -webkit-linear-gradient(top, rgb(133, 129, 157), rgb(133, 129, 157));
   opacity: 0.9;
   -webkit-text-stroke-width: 0.1px;
   float: right;
-  margin-right: 30px;
+  margin: 30px 30px;
 }
 .hero .top .works .text {
   height: 50%;
@@ -139,12 +160,13 @@ nav .nav-container .socials p:hover {
   padding-left: 60px;
 }
 .hero .top .works .text h1 {
-  color: #7863e4;
+  color: #363746;
 }
 .hero .top .works .text p {
-  color: #7863e4;
+  color: #363746;
   opacity: 0.9;
   margin-top: -10px;
+  width: 100px;
 }
 .hero .top .about {
   height: 100%;
@@ -158,7 +180,7 @@ nav .nav-container .socials p:hover {
   width: 100%;
 }
 .hero .top .about .img .pencil {
-  font-size: 90px;
+  font-size: 80px;
   float: right;
   padding: 20px 30px 0px 0px;
 }
@@ -168,10 +190,10 @@ nav .nav-container .socials p:hover {
   padding-left: 30px;
 }
 .hero .top .about .text h1 {
-  color: #7863e4;
+  color: #363746;
 }
 .hero .top .about .text p {
-  color: #7863e4;
+  color: #363746;
   opacity: 0.9;
   margin-top: -10px;
 }
@@ -193,11 +215,11 @@ nav .nav-container .socials p:hover {
   box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
 }
 .hero .bottom .contact h1 {
-  color: #7863e4;
+  color: #363746;
   margin-left: 20px;
 }
 .hero .bottom .contact p {
-  color: #7863e4;
+  color: #363746;
   opacity: 0.9;
   text-align: left;
   margin-left: 20px;
@@ -206,15 +228,14 @@ nav .nav-container .socials p:hover {
   height: 50px;
   width: 180px;
   border-radius: 20px;
-  margin-top: 20px;
   border: none;
   outline: none;
   box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
   box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
   font-size: 16px;
   font-weight: 570;
-  color: #7863e4;
-  margin: 10px 0px 0px 15%;
+  color: #363746;
+  margin: 5px 0px 0px 15%;
   cursor: pointer;
 }
 .hero .bottom .contact button:hover {
@@ -274,7 +295,7 @@ nav .nav-container .socials p:hover {
   padding: 40px 0px 0px 30px;
 }
 .hero .bottom .skills .text h1 {
-  color: #7863e4;
+  color: #363746;
 }
 .hero .bottom .skills .text .skills-container {
   width: 350px;
@@ -284,7 +305,7 @@ nav .nav-container .socials p:hover {
   border-radius: 20px;
 }
 .hero .bottom .skills .text .skills-container p {
-  color: #7863e4;
+  color: #363746;
   opacity: 0.9;
 }
 .hero .bottom .skills .img {
@@ -296,4 +317,248 @@ nav .nav-container .socials p:hover {
 }
 .hero .bottom .skills .img .designIcon {
   font-size: 90px;
+}
+
+.hero-aboutme {
+  height: 550px;
+  width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.hero-aboutme .top {
+  height: 48%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-aboutme .top .aboutme {
+  height: 100%;
+  width: 50%;
+  border-radius: 20px 60px 20px 60px;
+  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
+}
+.hero-aboutme .top .aboutme h1 {
+  padding: 0px 0px 0px 20px;
+  color: #363746;
+}
+.hero-aboutme .top .aboutme p {
+  padding: 0px 20px 0px 20px;
+  font-size: 15px;
+  color: #363746;
+  opacity: 0.9;
+}
+.hero-aboutme .top .image {
+  height: 100%;
+  width: 25%;
+  box-shadow: #c2c1eb 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  box-shadow: #c2c1eb 3px 3px 6px 0px inset, white -3px -3px 6px -1px inset;
+  border-radius: 20px 50px 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-aboutme .top .image .img-container {
+  height: 90%;
+  width: 90%;
+  border-radius: inherit;
+}
+.hero-aboutme .top .image .img-container img {
+  height: 100%;
+  border-radius: inherit;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+}
+.hero-aboutme .top .contact {
+  height: 100%;
+  width: 22%;
+  flex-direction: column;
+  border-radius: 20px 40px 20px 40px;
+  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
+}
+.hero-aboutme .top .contact h1 {
+  color: #363746;
+  margin-left: 20px;
+}
+.hero-aboutme .top .contact p {
+  color: #363746;
+  opacity: 0.9;
+  text-align: left;
+  margin-left: 20px;
+}
+.hero-aboutme .top .contact button {
+  height: 50px;
+  width: 180px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
+  font-size: 16px;
+  font-weight: 570;
+  color: #363746;
+  margin: 10px 0px 0px 20%;
+  cursor: pointer;
+}
+.hero-aboutme .top .contact button:hover {
+  animation: shake 0.4s linear;
+}
+@keyframes shake {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  40% {
+    transform: rotateZ(-10deg);
+  }
+  60% {
+    transform: rotateZ(10deg);
+  }
+  80% {
+    transform: rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+.hero-aboutme .bottom {
+  height: 42%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-aboutme .bottom .map {
+  height: 100%;
+  width: 25%;
+  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 40px;
+}
+.hero-aboutme .bottom .map .map-container {
+  height: 90%;
+  width: 90%;
+  border-radius: inherit;
+}
+.hero-aboutme .bottom .map .map-container iframe {
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+}
+.hero-aboutme .bottom .hobbies {
+  width: 20%;
+  height: 100%;
+  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
+  border-radius: 20px 40px;
+}
+.hero-aboutme .bottom .hobbies .hobbies-container {
+  height: 100%;
+  width: 90%;
+  margin: 0px 0px 0px 20px;
+}
+.hero-aboutme .bottom .hobbies .hobbies-container h1 {
+  color: #363746;
+}
+.hero-aboutme .bottom .hobbies .hobbies-container ul li {
+  color: #363746;
+  padding: 5px;
+  opacity: 0.9;
+}
+.hero-aboutme .bottom .skills {
+  height: 100%;
+  width: 50%;
+  border-radius: 20px;
+  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
+}
+.hero-aboutme .bottom .skills h1 {
+  padding: 0px 0px 0px 40px;
+  color: #363746;
+}
+.hero-aboutme .bottom .skills li {
+  list-style-type: none;
+  padding: 0px 0px 0px 60px;
+  display: flex;
+}
+.hero-aboutme .bottom .skills li p {
+  margin: 0px 0px 15px 0px;
+  color: #363746;
+  width: 120px;
+}
+.hero-aboutme .bottom .skills li .bar-container {
+  height: 5px;
+  width: 60%;
+  border: 1px solid #c2c1eb;
+  border-radius: 2px;
+}
+.hero-aboutme .bottom .skills li .bar-container .bar {
+  height: 5px;
+  display: block;
+  background: #c2c1eb;
+  border-radius: 5px;
+}
+.hero-aboutme .bottom .skills li .bar-container .html {
+  animation: html 3s linear;
+  width: 80%;
+}
+.hero-aboutme .bottom .skills li .bar-container .css {
+  animation: css 3s linear;
+  width: 70%;
+}
+.hero-aboutme .bottom .skills li .bar-container .js {
+  animation: js 3s linear;
+  width: 60%;
+}
+.hero-aboutme .bottom .skills li .bar-container .react {
+  animation: react 3s linear;
+  width: 50%;
+}
+@keyframes html {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+@keyframes css {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+@keyframes js {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+@keyframes react {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
 }/*# sourceMappingURL=App.css.map */

@@ -1,18 +1,37 @@
-import React,{useEffect} from 'react'
+import React,{ useRef, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';  
+import { Link } from 'react-router-dom';
 library.add(fas);
-export function VideoComponent() {
-    
+export const VideoComponent = () => {
+    const videoRef = useRef(null);
+  
+    useEffect(() => {
+      const videoElement = videoRef.current;
+  
+      const disableContextMenu = (e) => {
+        e.preventDefault(); // Prevent the default right-click behavior
+      };
+  
+      videoElement.addEventListener('contextmenu', disableContextMenu);
+  
+      return () => {
+        // Clean up the event listener when the component unmounts
+        videoElement.removeEventListener('contextmenu', disableContextMenu);
+      };
+    }, []);
+  
     return (
       <div>
-        <video id="myVideo" width="300" muted height="250" autoPlay loop>
-        <source src="video.mp4" type="video/mp4"/>
+        <video ref={videoRef}  id="myVideo" width="300" muted height="250" autoPlay loop>
+          <source src="video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
         </video>
       </div>
-    );    
-}
+    );
+  };
+  
 function Hero() {
   return (
     <>
@@ -32,20 +51,25 @@ function Hero() {
                 </div>
                 <div className="works">
                     <div className="img">
-                        <span id="boot-icon" class="bi bi-image" ></span>
+                        <FontAwesomeIcon className='icon-work' icon="fa-solid fa-list-check" style={{color: "#323a49",}} />                    
                     </div>
+
                     <div className="text">
                         <h1>My Works</h1>
-                        <p>EXPLORE &#8594;</p>
+                        <Link className="link" to='/works'>
+                            <p>EXPLORE &#8594;</p>
+                        </Link>
                     </div>
                 </div>
                 <div className="about">
                     <div className="img">
-                        <FontAwesomeIcon className="pencil" icon="fa-solid fa-pencil" style={{color: "#785ae4",}} />
+                        <FontAwesomeIcon className="pencil " icon="fa-solid fa-pencil"  style={{color: "#323a49",}} />
                     </div>  
                     <div className="text">
                         <h1>About Me</h1>
-                        <p>EXPLORE &#8594;</p>
+                        <Link className="link aboutme" to='/aboutme'>
+                            <p>EXPLORE &#8594;</p>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -53,10 +77,12 @@ function Hero() {
                 <div className="contact">
                     <h1>Available for <br /> work</h1>
                     <p>Contact me, lets talk!</p>
-                    <button>CONNECT</button>
+                    <Link className="link" to='/contact'>
+                        <button>CONNECT</button>
+                    </Link>
                 </div>
                 <div className="video">
-                    <VideoComponent/>
+                    <VideoComponent src="video.mp4"/>
                 </div>
                 <div className="skills">
                     <div className="text">
@@ -68,7 +94,7 @@ function Hero() {
                         </div>
                     </div>
                     <div className="img">
-                        <FontAwesomeIcon className="designIcon  fa-spin" icon="fa-solid fa-link" style={{color: "#785ae4",}} />
+                        <FontAwesomeIcon className="designIcon  fa-spin" icon="fa-solid fa-link" style={{color: "#323a49",}} />
                     </div>
                 </div>
             </div>
