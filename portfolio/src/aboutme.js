@@ -1,4 +1,5 @@
 import "./App.css";
+import { Link } from "react-router-dom";
 function AboutMe(){
     return(
         
@@ -15,7 +16,7 @@ function AboutMe(){
                          I'm crafting digital experiences that leave a lasting impression.
                           I'm excited to share my journey, projects, and the creativity that drives
                            me on this About Me page.
-                         Let's connect and collaborate to bring innovative web solutions to life!
+                         
                         </p>
                     </div>
                     <div className="image">
@@ -26,7 +27,9 @@ function AboutMe(){
                     <div className="contact">
                         <h1>Available for <br /> work</h1>
                         <p>Contact me, lets talk!</p>
-                        <button>CONNECT</button>
+                        <Link to="/contact">
+                            <button>CONNECT</button>
+                        </Link>
                     </div>
                 </div>
                 <div className="bottom">

@@ -90,7 +90,7 @@ nav .nav-container .socials a p:hover {
 .hero {
   height: 500px;
   margin: auto;
-  width: 1400px;
+  width: 1300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,7 +126,7 @@ nav .nav-container .socials a p:hover {
 .hero .top .intro p {
   color: #363746;
   opacity: 0.9;
-  padding: 0px 0px 0px 30px;
+  padding: 0px 20px 0px 30px;
 }
 .hero .top .works {
   height: 100%;
@@ -235,31 +235,8 @@ nav .nav-container .socials a p:hover {
   font-size: 16px;
   font-weight: 570;
   color: #363746;
-  margin: 5px 0px 0px 15%;
+  margin: 10px 0px 0px 50px;
   cursor: pointer;
-}
-.hero .bottom .contact button:hover {
-  animation: shake 0.4s linear;
-}
-@keyframes shake {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  20% {
-    transform: rotateZ(10deg);
-  }
-  40% {
-    transform: rotateZ(-10deg);
-  }
-  60% {
-    transform: rotateZ(10deg);
-  }
-  80% {
-    transform: rotateZ(-10deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
 }
 .hero .bottom .video {
   height: 100%;
@@ -320,18 +297,17 @@ nav .nav-container .socials a p:hover {
 }
 
 .hero-aboutme {
-  height: 550px;
-  width: 1400px;
+  height: 500px;
   margin: auto;
+  width: 1300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .hero-aboutme .top {
-  height: 48%;
-  width: 100%;
+  height: 47%;
+  width: 98%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,14 +325,14 @@ nav .nav-container .socials a p:hover {
   color: #363746;
 }
 .hero-aboutme .top .aboutme p {
-  padding: 0px 20px 0px 20px;
-  font-size: 15px;
+  padding: 0px 30px 0px 30px;
+  font-size: 14px;
   color: #363746;
   opacity: 0.9;
 }
 .hero-aboutme .top .image {
   height: 100%;
-  width: 25%;
+  width: 22%;
   box-shadow: #c2c1eb 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   box-shadow: #c2c1eb 3px 3px 6px 0px inset, white -3px -3px 6px -1px inset;
   border-radius: 20px 50px 20px 50px;
@@ -379,7 +355,7 @@ nav .nav-container .socials a p:hover {
      object-position: left;
 }
 .hero-aboutme .top .contact {
-  height: 100%;
+  height: 95%;
   width: 22%;
   flex-direction: column;
   border-radius: 20px 40px 20px 40px;
@@ -410,36 +386,14 @@ nav .nav-container .socials a p:hover {
   margin: 10px 0px 0px 20%;
   cursor: pointer;
 }
-.hero-aboutme .top .contact button:hover {
-  animation: shake 0.4s linear;
-}
-@keyframes shake {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  20% {
-    transform: rotateZ(10deg);
-  }
-  40% {
-    transform: rotateZ(-10deg);
-  }
-  60% {
-    transform: rotateZ(10deg);
-  }
-  80% {
-    transform: rotateZ(-10deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-}
 .hero-aboutme .bottom {
   height: 42%;
-  width: 100%;
+  width: 98%;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .hero-aboutme .bottom .map {
   height: 100%;
@@ -484,7 +438,7 @@ nav .nav-container .socials a p:hover {
 .hero-aboutme .bottom .skills {
   height: 100%;
   width: 50%;
-  border-radius: 20px;
+  border-radius: 20px 60px;
   box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
   box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
 }
@@ -498,7 +452,7 @@ nav .nav-container .socials a p:hover {
   display: flex;
 }
 .hero-aboutme .bottom .skills li p {
-  margin: 0px 0px 15px 0px;
+  margin: 0px 0px 10px 0px;
   color: #363746;
   width: 120px;
 }
@@ -515,27 +469,27 @@ nav .nav-container .socials a p:hover {
   border-radius: 5px;
 }
 .hero-aboutme .bottom .skills li .bar-container .html {
-  animation: html 3s linear;
-  width: 80%;
+  animation: html 4s;
+  width: 90%;
 }
 .hero-aboutme .bottom .skills li .bar-container .css {
-  animation: css 3s linear;
-  width: 70%;
+  animation: css 4s;
+  width: 80%;
 }
 .hero-aboutme .bottom .skills li .bar-container .js {
-  animation: js 3s linear;
+  animation: js 4s;
   width: 60%;
 }
 .hero-aboutme .bottom .skills li .bar-container .react {
-  animation: react 3s linear;
-  width: 50%;
+  animation: react 4s;
+  width: 60%;
 }
 @keyframes html {
   from {
     width: 0%;
   }
   to {
-    width: 80%;
+    width: 90%;
   }
 }
 @keyframes css {
@@ -543,7 +497,7 @@ nav .nav-container .socials a p:hover {
     width: 0%;
   }
   to {
-    width: 70%;
+    width: 80%;
   }
 }
 @keyframes js {
@@ -559,6 +513,88 @@ nav .nav-container .socials a p:hover {
     width: 0%;
   }
   to {
-    width: 50%;
+    width: 60%;
   }
+}
+
+.hero-works {
+  height: 500px;
+  width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.hero-works .chef .image {
+  background: url("../public/chef.png");
+}
+.hero-works .portfolio .image {
+  background: url("../public/portfolio.png");
+}
+.hero-works .smokefree .image-container .image {
+  background-image: url("../public/smokefree.png");
+}
+.hero-works .main {
+  height: 240px;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
+  border-radius: 20px 20px;
+}
+.hero-works .main .image-container {
+  height: 95%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-works .main .image-container .image {
+  height: 95%;
+  width: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  background-position-y: top;
+  transition: 1.5s ease-in-out;
+}
+.hero-works .main .image-container .image:hover {
+  background-position-y: bottom;
+}
+.hero-works .main .text {
+  height: 95%;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #363746;
+}
+.hero-works .main .text button {
+  height: 50px;
+  width: 180px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
+  font-size: 16px;
+  font-weight: 570;
+  color: #363746;
+  cursor: pointer;
+}
+.hero-works .main .text button:hover {
+  animation: shake 0.4s linear;
+}
+
+.form-hero {
+  height: 500px;
+  width: 400px;
+  border: 1px solid black;
+  margin: auto;
+  color: #363746;
 }/*# sourceMappingURL=App.css.map */

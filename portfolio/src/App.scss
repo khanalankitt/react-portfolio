@@ -85,7 +85,7 @@ nav{
 .hero{
     height:500px;
     margin: auto;
-    width:1400px;
+    width:1300px;
     @include center();
     flex-wrap: wrap;
     .link{
@@ -114,7 +114,7 @@ nav{
             p{
                 color:$text-color;
                 opacity:0.9;
-                padding:0px 0px 0px 30px;
+                padding:0px 20px 0px 30px;
             }
         }
         .works{
@@ -220,32 +220,8 @@ nav{
                 font-size: 16px;
                 font-weight:570;
                 color:$text-color;
-                margin: 5px 0px 0px 15%;
+                margin:10px 0px 0px 50px;
                 cursor:pointer;
-                &:hover{
-                animation :shake 0.4s linear;
-                }
-                @keyframes shake{
-                    0%{
-                        transform: rotateZ(0deg);
-                    }
-                    20%{
-                        transform: rotateZ(10deg);
-                    }
-                    40%{
-                        transform: rotateZ(-10deg);
-                    }
-                    60%{
-                        transform: rotateZ(10deg);
-                    }
-                    80%{
-                        transform: rotateZ(-10deg);
-                    }
-                    100%{
-                        transform: rotateZ(0deg);
-                    }
-                }
-
             }
         }
         .video{
@@ -305,15 +281,14 @@ nav{
 
 
 .hero-aboutme{
-    height:550px;
-    width:1400px;
+    height:500px;
     margin:auto;
+    width:1300px;
     @include center();
-    flex-direction: column;
-    justify-content: space-around;
+    flex-wrap: wrap;
     .top{
-        height:48%;
-        width:100%;
+        height:47%;
+        width:98%;
         @include center();
         justify-content: space-between;
         .aboutme{
@@ -327,15 +302,16 @@ nav{
                 color:$text-color;
             }
             p{
-                padding:0px 20px 0px 20px;
-                font-size: 15px;
+                padding:0px 30px 0px 30px;
+                
+                font-size: 14px;
                 color:$text-color;
                 opacity: 0.9;;
             }
         }
         .image{
             height:100%;
-            width:25%;
+            width:22%;
             box-shadow:$color 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
             box-shadow:$color 3px 3px 6px 0px inset, white -3px -3px 6px -1px inset;
             border-radius: 20px 50px 20px 50px;
@@ -354,7 +330,7 @@ nav{
             }
         }
         .contact{
-            height:100%;
+            height:95%;
             width:22%;
             flex-direction: column;
             border-radius: 20px 40px 20px 40px;
@@ -384,38 +360,15 @@ nav{
                 color:$text-color;
                 margin: 10px 0px 0px 20%;
                 cursor:pointer;
-                &:hover{
-                animation :shake 0.4s linear;
-                }
-                @keyframes shake{
-                    0%{
-                        transform: rotateZ(0deg);
-                    }
-                    20%{
-                        transform: rotateZ(10deg);
-                    }
-                    40%{
-                        transform: rotateZ(-10deg);
-                    }
-                    60%{
-                        transform: rotateZ(10deg);
-                    }
-                    80%{
-                        transform: rotateZ(-10deg);
-                    }
-                    100%{
-                        transform: rotateZ(0deg);
-                    }
-                }
-
             }
         }
     }
     .bottom{
         height:42%;
-        width:100%;
+        width:98%;
         @include center();
         justify-content: space-between;
+        flex-wrap: wrap;
         .map{
             height:100%;
             width:25%;
@@ -460,7 +413,7 @@ nav{
         .skills{
             height:100%;
             width:50%;
-            border-radius: 20px;
+            border-radius: 20px 60px;
             box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
             box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
             h1{
@@ -472,7 +425,7 @@ nav{
                 padding:0px 0px 0px 60px;
                 display: flex;
                 p{
-                    margin:0px 0px 15px 0px;
+                    margin:0px 0px 10px 0px;
                     color:$text-color;
                     width:120px;
                 }
@@ -488,28 +441,28 @@ nav{
                         border-radius: 5px;
                     }
                     .html{
-                        animation :html 3s linear;
-                        width:80%;
+                        animation :html 4s ;
+                        width:90%;
                     }
                     .css{
-                        animation :css 3s linear ;
-                        width:70%;
+                        animation :css 4s  ;
+                        width:80%;
                     }
                     .js{
-                        animation :js 3s linear;
+                        animation :js 4s ;
                         width:60%;
                     }
                     .react{
-                        animation :react 3s linear;
-                        width:50%;
+                        animation :react 4s ;
+                        width:60%;
                     }
                     @keyframes html{
                         from{width:0%;}
-                        to{width:80%;}
+                        to{width:90%;}
                     }
                     @keyframes css{
                         from{width:0%;}
-                        to{width:70%;}
+                        to{width:80%;}
                     }                    
                     @keyframes js{
                         from{width:0%;}
@@ -517,10 +470,95 @@ nav{
                     }                    
                     @keyframes react{
                         from{width:0%;}
-                        to{width:50%;}
+                        to{width:60%;}
                     }
                 }
             }
         }
     }
+}
+
+
+
+.hero-works{
+    height:500px;
+    width:1300px;
+    @include center();
+    margin: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .chef{
+        .image{
+            background: url("../public/chef.png");
+        }
+    }
+    .portfolio{
+        .image{
+            background: url("../public/portfolio.png");
+        }
+    }
+    .smokefree{
+        .image-container{
+            .image{
+                background-image: url("../public/smokefree.png");
+            }
+        }
+    }
+    .main{
+        height:240px;
+        width:45%;
+        @include center();
+        justify-content: space-evenly;
+        box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+        box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
+        border-radius: 20px 20px;
+        .image-container{
+            height:95%;
+            width:60%;
+            @include center();
+            .image{
+                height:95%;
+                width:100%;
+                border-radius: 10px;
+                background-size: cover;
+                background-position-y: top;
+                transition: 1.5s ease-in-out;
+                &:hover{
+                    background-position-y:bottom;
+                }
+            }
+    
+        }
+        .text{
+            height:95%;
+            width:35%;
+            @include center();
+            flex-direction: column;
+            color:$text-color;
+            button{
+                height:50px;
+                width:180px;
+                border-radius: 20px;
+                border:none;
+                outline:none;
+                box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+                box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
+                font-size: 16px;
+                font-weight:570;
+                color:$text-color;
+                cursor:pointer;
+                &:hover{
+                animation :shake 0.4s linear;
+                }
+            }
+        }
+    }
+}
+
+.form-hero{
+    height:500px;
+    width:400px;
+    border: 1px solid black;
+    margin:auto;
+    color:$text-color;
 }

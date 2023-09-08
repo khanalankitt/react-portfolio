@@ -31,7 +31,7 @@ export const VideoComponent = () => {
       </div>
     );
   };
-  
+
 function Hero() {
   return (
     <>
