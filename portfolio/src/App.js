@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route,Routes,BrowserRouter} from "react-router-dom";
+import {Route,Routes,HashRouter} from "react-router-dom";
 import './App.css';
 import Nav from './nav';
 import Hero from './hero';
@@ -10,7 +10,7 @@ import Footer from './footer';
 function App() {
   return (
     <>
-    <BrowserRouter>
+    <HashRouter basename='react-portfolio'>
         <Nav/>
       <Routes>
         <Route path='/' element={<Hero/>}/>
@@ -19,7 +19,7 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
       </Routes>
       <Footer/>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
