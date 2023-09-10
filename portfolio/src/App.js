@@ -10,7 +10,7 @@ import Footer from './footer';
 function App() {
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename="/khanalankitt">
         <Nav/>
       <Routes>
         <Route path='/' element={<Hero/>}/>
