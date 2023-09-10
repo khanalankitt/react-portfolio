@@ -5,6 +5,7 @@ export const marqueeStyles={
     color:"#c2c1eb",
     position:"absolute",
     opacity:0.4,
+    bottom:0
     
 }
 function Footer() {
@@ -17,3 +18,4 @@ function Footer() {
 }
 
 export default Footer;
+

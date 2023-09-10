@@ -1,13 +1,12 @@
 body {
   background: #f1f1f1;
-  overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
   margin: auto;
   height: 120px;
-  width: 100vw;
+  width: 1400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,6 +65,9 @@ nav .nav-container .socials a {
   height: 50px;
   margin: 0px 10px 0px 10px;
 }
+nav .nav-container .socials a .github-logo {
+  margin-left: 5px;
+}
 nav .nav-container .socials a p {
   display: flex;
   justify-content: center;
@@ -79,12 +81,12 @@ nav .nav-container .socials a p {
   margin-left: 10px;
   color: #363746;
   box-shadow: #c2c1eb 3px 3px 6px 0px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-  transition: 0.5s ease-in-out;
+  transition: 0.1s ease;
   font-weight: 500;
   cursor: pointer;
 }
 nav .nav-container .socials a p:hover {
-  transform: rotateY(360deg);
+  background: white;
 }
 
 .hero {
@@ -592,9 +594,52 @@ nav .nav-container .socials a p:hover {
 }
 
 .form-hero {
-  height: 500px;
-  width: 400px;
-  border: 1px solid black;
+  height: 460px;
+  width: 500px;
   margin: auto;
   color: #363746;
+}
+.form-hero form {
+  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
+  height: 100%;
+  border-radius: 20px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-hero form .form-container {
+  height: 100%;
+  margin-left: 10px;
+}
+.form-hero form .form-container h1 {
+  height: 25px;
+}
+.form-hero form .form-container label {
+  font-size: 14px;
+}
+.form-hero form .form-container textarea {
+  padding: 10px;
+  margin: 10px 0px 0px 0px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  box-shadow: 2px 1px 1px 1px #c2c1eb;
+}
+.form-hero form .form-container input {
+  padding: 0px 15px 0px 15px;
+  height: 35px;
+  width: 200px;
+  margin: 10px 0px 10px 0px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  box-shadow: 2px 1px 1px 1px #c2c1eb;
+}
+.form-hero form .form-container #submit {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
 }/*# sourceMappingURL=App.css.map */

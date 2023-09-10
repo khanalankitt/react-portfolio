@@ -1,6 +1,5 @@
 body{
     background: #f1f1f1;
-    overflow-x: hidden;
     font-family:Arial, Helvetica, sans-serif;
 }
 $color:#c2c1eb;
@@ -13,7 +12,7 @@ $text-color:#363746;
 nav{
     margin:auto;
     height:120px;
-    width:100vw;
+    width:1400px;
     @include center();
     .link{
         text-decoration-line: none;
@@ -58,6 +57,9 @@ nav{
                 text-align: center;
                 height:50px;
                 margin:0px 10px 0px 10px;
+                .github-logo{
+                    margin-left: 5px;
+                }
                 p{
                     @include center();
                     height:30px;
@@ -69,11 +71,11 @@ nav{
                     margin-left:10px;   
                     color:$text-color;
                     box-shadow:$color 3px 3px 6px 0px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-                    transition: 0.5s ease-in-out;
+                    transition: 0.1s ease;
                     font-weight: 500;
                     cursor: pointer;
                     &:hover{
-                        transform: rotateY(360deg);
+                        background: white;
                     }
                 }
     
@@ -556,9 +558,51 @@ nav{
 }
 
 .form-hero{
-    height:500px;
-    width:400px;
-    border: 1px solid black;
+    height:460px;
+    width:500px;
     margin:auto;
     color:$text-color;
+    form{
+        box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+        box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
+        height:100%;
+        border-radius: 20px 80px;
+        @include center();
+        .form-container{
+            height:100%;
+            margin-left: 10px;
+            h1{
+                height:25px;
+            }
+            label{
+                font-size: 14px;
+            }
+            textarea{
+                padding:10px;
+                margin:10px 0px 0px 0px;
+                border-radius: 20px;
+                outline:none;
+                border:none;
+                box-shadow: 2px 1px 1px 1px $color;
+            }
+            input{
+                padding:0px 15px 0px 15px;
+                height:35px;
+                width:200px;
+                margin:10px 0px 10px 0px;
+                border-radius: 20px;
+                outline:none;
+                border:none;
+                font-size: 14px;
+                box-shadow: 2px 1px 1px 1px $color;
+            }
+            #submit{
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: 500;
+                margin-left: 10px;
+            }
+        }
+    }
 }
+
