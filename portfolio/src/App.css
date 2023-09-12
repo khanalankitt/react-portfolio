@@ -89,6 +89,21 @@ nav .nav-container .socials a p:hover {
   background: white;
 }
 
+.button-connect {
+  height: 50px;
+  width: 180px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
+  font-size: 16px;
+  font-weight: 570;
+  color: #363746;
+  margin: 10px 0px 0px 20%;
+  cursor: pointer;
+}
+
 .hero {
   height: 500px;
   margin: auto;
@@ -103,6 +118,12 @@ nav .nav-container .socials a p:hover {
   display: block;
   width: 100px;
 }
+.hero .hero-item {
+  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
+  border-radius: 20px;
+  height: 100%;
+}
 .hero .top {
   height: 45%;
   width: 98%;
@@ -113,11 +134,7 @@ nav .nav-container .socials a p:hover {
   flex-wrap: wrap;
 }
 .hero .top .intro {
-  height: 100%;
   width: 45%;
-  border-radius: 20px 50px 20px 50px;
-  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
 }
 .hero .top .intro h1 {
   color: #363746;
@@ -131,15 +148,11 @@ nav .nav-container .socials a p:hover {
   padding: 0px 20px 0px 30px;
 }
 .hero .top .works {
-  height: 100%;
   width: 22%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 20px 40px 20px 40px;
-  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
 }
 .hero .top .works .img {
   height: 50%;
@@ -171,11 +184,7 @@ nav .nav-container .socials a p:hover {
   width: 100px;
 }
 .hero .top .about {
-  height: 100%;
   width: 22%;
-  border-radius: 20px 40px 20px 40px;
-  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
 }
 .hero .top .about .img {
   height: 50%;
@@ -209,12 +218,8 @@ nav .nav-container .socials a p:hover {
   flex-wrap: wrap;
 }
 .hero .bottom .contact {
-  height: 100%;
   width: 22%;
   flex-direction: column;
-  border-radius: 20px 40px 20px 40px;
-  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
 }
 .hero .bottom .contact h1 {
   color: #363746;
@@ -227,29 +232,14 @@ nav .nav-container .socials a p:hover {
   margin-left: 20px;
 }
 .hero .bottom .contact button {
-  height: 50px;
-  width: 180px;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
-  font-size: 16px;
-  font-weight: 570;
-  color: #363746;
-  margin: 10px 0px 0px 50px;
-  cursor: pointer;
+  margin-left: 50px;
 }
 .hero .bottom .video {
-  height: 100%;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
   overflow: hidden;
   width: 22%;
-  border-radius: 20px 40px;
-  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
 }
 .hero .bottom .video video {
   border-radius: 20px;
@@ -259,11 +249,7 @@ nav .nav-container .socials a p:hover {
      object-fit: cover;
 }
 .hero .bottom .skills {
-  height: 100%;
   width: 45%;
-  border-radius: 20px 40px 20px 40px;
-  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -307,6 +293,12 @@ nav .nav-container .socials a p:hover {
   align-items: center;
   flex-wrap: wrap;
 }
+.hero-aboutme .aboutme-item {
+  height: 100%;
+  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
+  border-radius: 20px;
+}
 .hero-aboutme .top {
   height: 47%;
   width: 98%;
@@ -318,9 +310,6 @@ nav .nav-container .socials a p:hover {
 .hero-aboutme .top .aboutme {
   height: 100%;
   width: 50%;
-  border-radius: 20px 60px 20px 60px;
-  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
 }
 .hero-aboutme .top .aboutme h1 {
   padding: 0px 0px 0px 20px;
@@ -337,7 +326,7 @@ nav .nav-container .socials a p:hover {
   width: 22%;
   box-shadow: #c2c1eb 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   box-shadow: #c2c1eb 3px 3px 6px 0px inset, white -3px -3px 6px -1px inset;
-  border-radius: 20px 50px 20px 50px;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -357,12 +346,8 @@ nav .nav-container .socials a p:hover {
      object-position: left;
 }
 .hero-aboutme .top .contact {
-  height: 95%;
   width: 22%;
   flex-direction: column;
-  border-radius: 20px 40px 20px 40px;
-  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
 }
 .hero-aboutme .top .contact h1 {
   color: #363746;
@@ -374,20 +359,6 @@ nav .nav-container .socials a p:hover {
   text-align: left;
   margin-left: 20px;
 }
-.hero-aboutme .top .contact button {
-  height: 50px;
-  width: 180px;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
-  font-size: 16px;
-  font-weight: 570;
-  color: #363746;
-  margin: 10px 0px 0px 20%;
-  cursor: pointer;
-}
 .hero-aboutme .bottom {
   height: 42%;
   width: 98%;
@@ -398,14 +369,10 @@ nav .nav-container .socials a p:hover {
   flex-wrap: wrap;
 }
 .hero-aboutme .bottom .map {
-  height: 100%;
   width: 25%;
-  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px 40px;
 }
 .hero-aboutme .bottom .map .map-container {
   height: 90%;
@@ -420,9 +387,6 @@ nav .nav-container .socials a p:hover {
 .hero-aboutme .bottom .hobbies {
   width: 20%;
   height: 100%;
-  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
-  border-radius: 20px 40px;
 }
 .hero-aboutme .bottom .hobbies .hobbies-container {
   height: 100%;
@@ -438,11 +402,7 @@ nav .nav-container .socials a p:hover {
   opacity: 0.9;
 }
 .hero-aboutme .bottom .skills {
-  height: 100%;
   width: 50%;
-  border-radius: 20px 60px;
-  box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-  box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
 }
 .hero-aboutme .bottom .skills h1 {
   padding: 0px 0px 0px 40px;
@@ -547,7 +507,7 @@ nav .nav-container .socials a p:hover {
   justify-content: space-evenly;
   box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
   box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
-  border-radius: 20px 20px;
+  border-radius: 20px;
 }
 .hero-works .main .image-container {
   height: 95%;
@@ -577,33 +537,16 @@ nav .nav-container .socials a p:hover {
   color: #363746;
 }
 .hero-works .main .text button {
-  height: 50px;
-  width: 180px;
-  border-radius: 20px;
-  border: none;
-  outline: none;
   box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
   box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
-  font-size: 16px;
-  font-weight: 570;
-  color: #363746;
   cursor: pointer;
 }
-.hero-works .main .text button:hover {
-  animation: shake 0.4s linear;
-}
 
-.form-hero {
-  height: 460px;
-  width: 500px;
-  margin: auto;
-  color: #363746;
-}
 .form-hero form {
   box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
   box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
   height: 100%;
-  border-radius: 20px 80px;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -612,34 +555,9 @@ nav .nav-container .socials a p:hover {
   height: 100%;
   margin-left: 10px;
 }
-.form-hero form .form-container h1 {
-  height: 25px;
-}
-.form-hero form .form-container label {
-  font-size: 14px;
-}
 .form-hero form .form-container textarea {
-  padding: 10px;
-  margin: 10px 0px 0px 0px;
-  border-radius: 20px;
-  outline: none;
-  border: none;
   box-shadow: 2px 1px 1px 1px #c2c1eb;
 }
 .form-hero form .form-container input {
-  padding: 0px 15px 0px 15px;
-  height: 35px;
-  width: 200px;
-  margin: 10px 0px 10px 0px;
-  border-radius: 20px;
-  outline: none;
-  border: none;
-  font-size: 14px;
   box-shadow: 2px 1px 1px 1px #c2c1eb;
-}
-.form-hero form .form-container #submit {
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
-  margin-left: 10px;
 }/*# sourceMappingURL=App.css.map */

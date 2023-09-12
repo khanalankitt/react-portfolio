@@ -37,7 +37,7 @@ function Hero() {
     <>
         <div className="hero">
             <div className="top">
-                <div className="intro">
+                <div className="intro hero-item">
                     <h1>
                         Hi, this is Ankit
                     </h1>
@@ -49,19 +49,19 @@ function Hero() {
                         
                     </p>
                 </div>
-                <div className="works">
+                <div className="works hero-item">
                     <div className="img">
                         <FontAwesomeIcon className='icon-work' icon="fa-solid fa-list-check" style={{color: "#323a49",}} />                    
                     </div>
 
                     <div className="text">
-                        <h1>My Works</h1>
+                        <h1>My Works</h1>   
                         <Link className="link" to='/works'>
                             <p>EXPLORE &#8594;</p>
                         </Link>
                     </div>
                 </div>
-                <div className="about">
+                <div className="about hero-item">
                     <div className="img">
                         <FontAwesomeIcon className="pencil " icon="fa-solid fa-pencil"  style={{color: "#323a49",}} />
                     </div>  
@@ -74,17 +74,17 @@ function Hero() {
                 </div>
             </div>
             <div className="bottom">
-                <div className="contact">
+                <div className="contact hero-item">
                     <h1>Available for <br /> work</h1>
                     <p>Contact me, lets talk!</p>
                     <Link className="link" to='/contact'>
-                        <button>CONNECT</button>
+                        <button className='button-connect'>CONNECT</button>
                     </Link>
                 </div>
-                <div className="video">
+                <div className="video hero-item">
                     <VideoComponent src="video.mp4"/>
                 </div>
-                <div className="skills">
+                <div className="skills hero-item">
                     <div className="text">
                         <h1>Design Skills</h1>
                         <div className="skills-container">

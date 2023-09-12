@@ -10,7 +10,7 @@ export const Project = (props)=>{
                 <div className="text">
                     <h2>{props.name}</h2>
                     <a href={props.link} target="_blank" rel="noreferrer" >
-                        <button>
+                        <button style={buttonStyle}>
                             Live Demo
                         </button>
                     </a>
@@ -18,6 +18,16 @@ export const Project = (props)=>{
             </div>
         </>
     );
+}
+const buttonStyle={
+    height:"50px",
+    width:'170px',
+    borderRadius:"20px",
+    border:"none",
+    outline:"none",
+    fontSize:"16px",
+    fontWeight:570,
+    color:"$text-color"
 }
 function Works() {
     let links={

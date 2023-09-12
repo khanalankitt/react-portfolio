@@ -6,7 +6,7 @@ function AboutMe(){
         <>
             <div className="hero-aboutme">
                 <div className="top">
-                    <div className="aboutme">
+                    <div className="aboutme aboutme-item">
                         <h1>About Me</h1>
                         <p>
                         I'm thrilled to introduce myself as an aspiring computer science student with a passion for
@@ -24,16 +24,16 @@ function AboutMe(){
                             <img src="me.jpg" alt="Photograph of Ankit Khanal" />
                         </div>
                     </div>
-                    <div className="contact">
+                    <div className="contact aboutme-item">
                         <h1>Available for <br /> work</h1>
                         <p>Contact me, lets talk!</p>
                         <Link to="/contact">
-                            <button>CONNECT</button>
+                            <button className="button-connect">CONNECT</button>
                         </Link>
                     </div>
                 </div>
                 <div className="bottom">
-                    <div className="map">
+                    <div className="map aboutme-item">
                         <div className="map-container">
                         <iframe title="Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d757.9862276193622!2d87.69711808951423!3d26.659841980945302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e591a964b5a017%3A0x47f76b460ddd0947!2z4KSm4KSu4KSVIOCkmuCli-CkguCklQ!5e0!3m2!1sen!2snp!4v1694060904235!5m2!1sen!2snp" 
                         style={{border:0,}} 
@@ -42,7 +42,7 @@ function AboutMe(){
                         referrerPolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-                    <div className="hobbies">
+                    <div className="hobbies aboutme-item">
                         <div className="hobbies-container">
                             <h1>Hobbies</h1>
                             <ul>
@@ -53,7 +53,7 @@ function AboutMe(){
                             </ul>
                         </div>
                     </div>
-                    <div className="skills">
+                    <div className="skills aboutme-item">
                         <h1>Skills</h1>
                         <li>
                             <p>HTML</p>

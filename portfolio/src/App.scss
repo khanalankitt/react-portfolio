@@ -84,6 +84,20 @@ nav{
     }
 }
 
+.button-connect{
+    height:50px;
+    width:180px;
+    border-radius: 20px;
+    border:none;
+    outline:none;
+    box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+    box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
+    font-size: 16px;
+    font-weight:570;
+    color:$text-color;
+    margin: 10px 0px 0px 20%;
+    cursor:pointer;
+}
 .hero{
     height:500px;
     margin: auto;
@@ -95,6 +109,12 @@ nav{
         display: block;
         width:100px;
     }
+    .hero-item{
+        box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+        box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
+        border-radius: 20px;
+        height:100%;
+    }
     .top{
         height:45%;
         width:98%;
@@ -102,11 +122,7 @@ nav{
         justify-content: space-evenly;
         flex-wrap: wrap;
         .intro{
-            height:100%;
             width:45%;
-            border-radius: 20px 50px 20px 50px;
-            box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-            box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
             h1{
                 color:$text-color;
                 margin-top:90px;
@@ -120,13 +136,9 @@ nav{
             }
         }
         .works{
-            height:100%;
             width:22%;
             @include center();
             flex-direction: column;
-            border-radius: 20px 40px 20px 40px;
-            box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-            box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
             .img{
                 height:50%;
                 width:100%;
@@ -158,11 +170,7 @@ nav{
             }
         }
         .about{
-            height:100%;
             width:22%;
-            border-radius: 20px 40px 20px 40px;
-            box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-            box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
             .img{
                 height:50%;
                 width:100%;
@@ -194,12 +202,8 @@ nav{
         justify-content: space-evenly;
         flex-wrap: wrap;
         .contact{
-            height:100%;
             width:22%;
             flex-direction: column;
-            border-radius: 20px 40px 20px 40px;
-            box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-            box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
             h1{
                 color:$text-color;
                 margin-left:20px;
@@ -210,30 +214,14 @@ nav{
                 text-align: left;
                 margin-left:20px;
             }
-            
             button{
-                height:50px;
-                width:180px;
-                border-radius: 20px;
-                border:none;
-                outline:none;
-                box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-                box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
-                font-size: 16px;
-                font-weight:570;
-                color:$text-color;
-                margin:10px 0px 0px 50px;
-                cursor:pointer;
+                margin-left: 50px;
             }
         }
         .video{
-            height:100%;
             user-select: none;
             overflow:hidden;
             width:22%;
-            border-radius: 20px 40px;
-            box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-            box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
             video{
                 border-radius: 20px;
                 outline:none;
@@ -242,12 +230,7 @@ nav{
             }
         }
         .skills{
-            height:100%;
             width:45%;
-            border-radius: 20px 40px 20px 40px;
-            box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-            box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
-
             @include center();
             .text{
                 height:100%;
@@ -288,6 +271,12 @@ nav{
     width:1300px;
     @include center();
     flex-wrap: wrap;
+    .aboutme-item{
+        height:100%;
+        box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+        box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
+        border-radius: 20px ;
+    }
     .top{
         height:47%;
         width:98%;
@@ -296,9 +285,6 @@ nav{
         .aboutme{
             height:100%;
             width:50%;
-            border-radius: 20px 60px 20px 60px;
-            box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-            box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
             h1{
                 padding:0px 0px 0px 20px;
                 color:$text-color;
@@ -316,7 +302,7 @@ nav{
             width:22%;
             box-shadow:$color 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
             box-shadow:$color 3px 3px 6px 0px inset, white -3px -3px 6px -1px inset;
-            border-radius: 20px 50px 20px 50px;
+            border-radius: 20px ;
             @include center();
             .img-container{
                 height:90%;
@@ -332,12 +318,8 @@ nav{
             }
         }
         .contact{
-            height:95%;
             width:22%;
             flex-direction: column;
-            border-radius: 20px 40px 20px 40px;
-            box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-            box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
             h1{
                 color:$text-color;
                 margin-left:20px;
@@ -347,22 +329,7 @@ nav{
                 opacity: 0.9;
                 text-align: left;
                 margin-left:20px;
-            }
-            
-            button{
-                height:50px;
-                width:180px;
-                border-radius: 20px;
-                border:none;
-                outline:none;
-                box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-                box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
-                font-size: 16px;
-                font-weight:570;
-                color:$text-color;
-                margin: 10px 0px 0px 20%;
-                cursor:pointer;
-            }
+            }    
         }
     }
     .bottom{
@@ -372,12 +339,8 @@ nav{
         justify-content: space-between;
         flex-wrap: wrap;
         .map{
-            height:100%;
             width:25%;
-            box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-            box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
             @include center();
-            border-radius: 20px 40px;
             .map-container{
                 height:90%;
                 width:90%;
@@ -393,9 +356,6 @@ nav{
         .hobbies{
             width:20%;
             height:100%;
-            box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-            box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
-            border-radius: 20px 40px;
             .hobbies-container{
                 height:100%;
                 width:90%;
@@ -413,11 +373,7 @@ nav{
             }
         }
         .skills{
-            height:100%;
             width:50%;
-            border-radius: 20px 60px;
-            box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-            box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
             h1{
                 padding:0px 0px 0px 40px;
                 color:$text-color;
@@ -513,7 +469,7 @@ nav{
         justify-content: space-evenly;
         box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
         box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
-        border-radius: 20px 20px;
+        border-radius: 20px;
         .image-container{
             height:95%;
             width:60%;
@@ -538,69 +494,29 @@ nav{
             flex-direction: column;
             color:$text-color;
             button{
-                height:50px;
-                width:180px;
-                border-radius: 20px;
-                border:none;
-                outline:none;
                 box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
                 box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
-                font-size: 16px;
-                font-weight:570;
-                color:$text-color;
                 cursor:pointer;
-                &:hover{
-                animation :shake 0.4s linear;
-                }
             }
         }
     }
 }
 
 .form-hero{
-    height:460px;
-    width:500px;
-    margin:auto;
-    color:$text-color;
     form{
         box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
         box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
         height:100%;
-        border-radius: 20px 80px;
+        border-radius: 20px;
         @include center();
         .form-container{
             height:100%;
             margin-left: 10px;
-            h1{
-                height:25px;
-            }
-            label{
-                font-size: 14px;
-            }
             textarea{
-                padding:10px;
-                margin:10px 0px 0px 0px;
-                border-radius: 20px;
-                outline:none;
-                border:none;
                 box-shadow: 2px 1px 1px 1px $color;
             }
             input{
-                padding:0px 15px 0px 15px;
-                height:35px;
-                width:200px;
-                margin:10px 0px 10px 0px;
-                border-radius: 20px;
-                outline:none;
-                border:none;
-                font-size: 14px;
                 box-shadow: 2px 1px 1px 1px $color;
-            }
-            #submit{
-                cursor: pointer;
-                font-size: 16px;
-                font-weight: 500;
-                margin-left: 10px;
             }
         }
     }
