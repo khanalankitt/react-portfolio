@@ -1,6 +1,8 @@
 body {
   background: #f1f1f1;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
@@ -160,11 +162,10 @@ nav .nav-container .socials a p:hover {
 }
 .hero .top .works .img .icon-work {
   font-size: 80px;
-  color: transparent;
+  color: #363746;
   -webkit-background-clip: text;
           background-clip: text;
   background-image: -webkit-linear-gradient(top, rgb(133, 129, 157), rgb(133, 129, 157));
-  opacity: 0.9;
   -webkit-text-stroke-width: 0.1px;
   float: right;
   margin: 30px 30px;
@@ -185,6 +186,10 @@ nav .nav-container .socials a p:hover {
 }
 .hero .top .about {
   width: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .hero .top .about .img {
   height: 50%;
@@ -193,12 +198,12 @@ nav .nav-container .socials a p:hover {
 .hero .top .about .img .pencil {
   font-size: 80px;
   float: right;
-  padding: 20px 30px 0px 0px;
+  margin: 30px 30px 0px 0px;
 }
 .hero .top .about .text {
   height: 50%;
   width: 100%;
-  padding-left: 30px;
+  padding-left: 60px;
 }
 .hero .top .about .text h1 {
   color: #363746;
@@ -207,6 +212,7 @@ nav .nav-container .socials a p:hover {
   color: #363746;
   opacity: 0.9;
   margin-top: -10px;
+  width: 100px;
 }
 .hero .bottom {
   height: 47%;
@@ -489,15 +495,6 @@ nav .nav-container .socials a p:hover {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.hero-works .chef .image {
-  background: url("../public/chef.png");
-}
-.hero-works .portfolio .image {
-  background: url("../public/portfolio.png");
-}
-.hero-works .smokefree .image-container .image {
-  background-image: url("../public/smokefree.png");
-}
 .hero-works .main {
   height: 240px;
   width: 45%;
@@ -510,22 +507,20 @@ nav .nav-container .socials a p:hover {
   border-radius: 20px;
 }
 .hero-works .main .image-container {
-  height: 95%;
+  height: 93%;
   width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
 }
-.hero-works .main .image-container .image {
-  height: 95%;
+.hero-works .main .image-container img {
   width: 100%;
-  border-radius: 10px;
-  background-size: cover;
-  background-position-y: top;
-  transition: 1.5s ease-in-out;
-}
-.hero-works .main .image-container .image:hover {
-  background-position-y: bottom;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
 }
 .hero-works .main .text {
   height: 95%;
@@ -560,4 +555,118 @@ nav .nav-container .socials a p:hover {
 }
 .form-hero form .form-container input {
   box-shadow: 2px 1px 1px 1px #c2c1eb;
+}
+
+@media (max-width: 768px) {
+  nav {
+    margin-top: 20px;
+    width: 400px;
+  }
+  nav .nav-container {
+    flex-direction: column;
+  }
+  nav .nav-container .links {
+    width: 300px;
+  }
+  nav .nav-container .links p {
+    padding: 5px 5px 5px 10px;
+    width: 70px;
+    margin-left: 8px;
+  }
+  .hero {
+    height: auto;
+    width: 350px;
+  }
+  .hero .top {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .hero .top .hero-item {
+    width: inherit;
+    margin-top: 20px;
+  }
+  .hero .top .intro {
+    height: 100%;
+    width: inherit;
+  }
+  .hero .top .intro h1 {
+    margin: 50px 0px 0px 0px;
+  }
+  .hero .top .works {
+    width: 48%;
+  }
+  .hero .top .works .img .icon-work {
+    font-size: 50px;
+    float: left;
+  }
+  .hero .top .works .text {
+    margin-top: -25px;
+  }
+  .hero .top .works .text h1 {
+    font-size: 23px;
+  }
+  .hero .top .works .text p {
+    font-size: 14px;
+  }
+  .hero .top .about {
+    width: 48%;
+  }
+  .hero .top .about .img {
+    margin: 0px 0px 30px 60px;
+  }
+  .hero .top .about .img .pencil {
+    font-size: 50px;
+    float: left;
+  }
+  .hero .top .about .text {
+    margin-top: -25px;
+  }
+  .hero .top .about .text h1 {
+    font-size: 23px;
+  }
+  .hero .top .about .text p {
+    font-size: 14px;
+  }
+  .hero .bottom {
+    width: 100%;
+    flex-direction: column;
+  }
+  .hero .bottom .hero-item {
+    width: inherit;
+    margin-top: 20px;
+  }
+  .hero .bottom .contact {
+    height: 200px;
+    width: 100%;
+  }
+  .hero .bottom .contact button {
+    margin-left: 90px;
+  }
+  .hero .bottom .video {
+    width: 100%;
+    height: 190px;
+  }
+  .hero .bottom .video video {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .hero .bottom .skills {
+    width: 100%;
+  }
+  .hero .bottom .skills .text {
+    padding: 10px 10px 10px 10px;
+  }
+  .hero .bottom .skills .text h1 {
+    margin-left: 20px;
+  }
+  .hero .bottom .skills .text .skills-container {
+    margin-left: 20px;
+    width: 250px;
+  }
+  .hero .bottom .skills .img .designIcon {
+    font-size: 50px;
+    margin: -100px 30px 0px 0px;
+  }
 }/*# sourceMappingURL=App.css.map */

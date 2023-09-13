@@ -4,8 +4,7 @@ export const Project = (props)=>{
         <>
             <div className={props.classname}>
                 <div className="image-container">
-                    <div className="image">
-                    </div>
+                    <img loading='lazy' src={props.imageLink} alt="Photograph of the website" />
                 </div>
                 <div className="text">
                     <h2>{props.name}</h2>
@@ -30,6 +29,11 @@ const buttonStyle={
     color:"$text-color"
 }
 function Works() {
+    let imageLinks={
+        chef:"chef.png",
+        portfolio:"portfolio.png",
+        smokefree:"smokefree.png"
+    }
     let links={
         chef:"https://khanalankitt.github.io/Chef/",
         portfolio:"https://khanalankit69.com.np/",
@@ -38,9 +42,9 @@ function Works() {
   return (
         <>
             <div className="hero-works">
-                <Project classname="chef main" name="Chef" link={links.chef}/>
-                <Project classname="portfolio main" name="Portfolio" link={links.portfolio}/>
-                <Project classname="smokefree main" name="Smokefree" link={links.smokefree}/>
+                <Project classname="chef main" imageLink={imageLinks.chef} name="Chef" link={links.chef}/>
+                <Project classname="portfolio main" name="Portfolio" imageLink={imageLinks.portfolio} link={links.portfolio}/>
+                <Project classname="smokefree main" name="Smokefree" imageLink={imageLinks.smokefree} link={links.smokefree}/>
             </div>
         </>
     );

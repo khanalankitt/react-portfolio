@@ -51,7 +51,7 @@ function Hero() {
                 </div>
                 <div className="works hero-item">
                     <div className="img">
-                        <FontAwesomeIcon className='icon-work' icon="fa-solid fa-list-check" style={{color: "#323a49",}} />                    
+                        <FontAwesomeIcon className='icon-work' icon="fa-solid fa-list-check" style={{color: "#363746",}} />                    
                     </div>
 
                     <div className="text">
@@ -75,7 +75,12 @@ function Hero() {
             </div>
             <div className="bottom">
                 <div className="contact hero-item">
-                    <h1>Available for <br /> work</h1>
+                    {
+                        window.innerWidth >= 768 ?
+                            <h1>Available for <br /> work</h1>
+                        :
+                            <h1>Available for work</h1>
+                    }
                     <p>Contact me, lets talk!</p>
                     <Link className="link" to='/contact'>
                         <button className='button-connect'>CONNECT</button>

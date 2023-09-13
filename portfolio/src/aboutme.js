@@ -21,7 +21,7 @@ function AboutMe(){
                     </div>
                     <div className="image">
                         <div className="img-container">
-                            <img src="me.jpg" alt="Photograph of Ankit Khanal" />
+                            <img src="me.jpg" loading="lazy" alt="Photograph of Ankit Khanal" />
                         </div>
                     </div>
                     <div className="contact aboutme-item">

@@ -1,13 +1,20 @@
 body{
     background: #f1f1f1;
     font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
 }
+
 $color:#c2c1eb;
 $text-color:#363746;
 @mixin center{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@mixin shadow{
+    box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+    box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
 }
 nav{
     margin:auto;
@@ -90,8 +97,7 @@ nav{
     border-radius: 20px;
     border:none;
     outline:none;
-    box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-    box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
+    @include shadow;
     font-size: 16px;
     font-weight:570;
     color:$text-color;
@@ -110,8 +116,7 @@ nav{
         width:100px;
     }
     .hero-item{
-        box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-        box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
+        @include shadow;
         border-radius: 20px;
         height:100%;
     }
@@ -144,11 +149,10 @@ nav{
                 width:100%;
                 .icon-work{
                     font-size: 80px;
-                    color: transparent; 
+                    color: $text-color; 
                     background-clip: text; 
                     background-image: -webkit-linear-gradient(top, rgb(133,129,157),
                     rgb(133,129,157));
-                    opacity: 0.9;
                     -webkit-text-stroke-width: 0.1px;
                     float:right;
                     margin:30px 30px;
@@ -171,19 +175,21 @@ nav{
         }
         .about{
             width:22%;
+            @include center();
+            flex-direction: column;
             .img{
                 height:50%;
                 width:100%;
                 .pencil{
                     font-size: 80px;
                     float:right;
-                    padding:20px 30px 0px 0px;
+                    margin:30px 30px 0px 0px;
                 }
             }
             .text{
                 height:50%;
                 width: 100%;
-                padding-left:30px;
+                padding-left:60px;
                 h1{
                     color:$text-color;
                 }
@@ -191,6 +197,7 @@ nav{
                     color:$text-color;
                     opacity:0.9;
                     margin-top:-10px;
+                    width:100px;
                 }
             }
         }
@@ -273,8 +280,7 @@ nav{
     flex-wrap: wrap;
     .aboutme-item{
         height:100%;
-        box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-        box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
+        @include shadow;
         border-radius: 20px ;
     }
     .top{
@@ -445,47 +451,26 @@ nav{
     margin: auto;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    .chef{
-        .image{
-            background: url("../public/chef.png");
-        }
-    }
-    .portfolio{
-        .image{
-            background: url("../public/portfolio.png");
-        }
-    }
-    .smokefree{
-        .image-container{
-            .image{
-                background-image: url("../public/smokefree.png");
-            }
-        }
-    }
     .main{
         height:240px;
         width:45%;
         @include center();
         justify-content: space-evenly;
-        box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-        box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
+        @include shadow;
         border-radius: 20px;
         .image-container{
-            height:95%;
+            height:93%;
             width:60%;
             @include center();
-            .image{
-                height:95%;
+            overflow: hidden;
+            border-radius: 20px;
+            position: relative;
+            img{
                 width:100%;
-                border-radius: 10px;
-                background-size: cover;
-                background-position-y: top;
-                transition: 1.5s ease-in-out;
-                &:hover{
-                    background-position-y:bottom;
-                }
+                border-radius: 20px;
+                position: absolute;
+                top:0;
             }
-    
         }
         .text{
             height:95%;
@@ -494,8 +479,7 @@ nav{
             flex-direction: column;
             color:$text-color;
             button{
-                box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-                box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
+                @include shadow;
                 cursor:pointer;
             }
         }
@@ -504,8 +488,7 @@ nav{
 
 .form-hero{
     form{
-        box-shadow:$color 3px 3px 10px 1px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-        box-shadow:$color 3px 3px 5px 0px, white -5px -5px 18px -1px;
+        @include shadow;
         height:100%;
         border-radius: 20px;
         @include center();
@@ -522,3 +505,122 @@ nav{
     }
 }
 
+
+
+
+@media (max-width:768px){
+    nav{
+        margin-top: 20px;
+        width:400px;
+        .nav-container{
+            flex-direction: column;
+            .links{
+                width:300px;
+                p{
+                    padding:5px 5px 5px 10px;
+                    width:70px;
+                    margin-left:8px;
+                }
+            }
+        }
+    }
+    .hero{
+        height:auto;
+        width:350px;
+        .top{
+            width:100%;
+            justify-content: space-between;
+            .hero-item{
+                width:inherit;
+                margin-top:20px;
+            }
+            .intro{
+                height:100%;
+                width:inherit;
+                h1{
+                    margin:50px 0px 0px 0px;
+                }
+            }
+            .works{
+                width:48%;
+                .img{
+                    .icon-work{
+                        font-size: 50px;
+                        float: left;
+                    }
+                }
+                .text{
+                    margin-top: -25px;
+                    h1{
+                        font-size: 23px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .about{                
+                width:48%;
+                .img{
+                    margin: 0px 0px 30px 60px;
+                    .pencil{
+                        font-size: 50px;
+                        float: left;
+                    }
+                }
+                .text{
+                    margin-top: -25px;
+                    h1{
+                        font-size: 23px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }                    
+                }
+            }
+        }
+        .bottom{
+            width:100%;
+            flex-direction: column;
+            .hero-item{
+                width:inherit;
+                margin-top:20px;
+            }
+            .contact{
+                height:200px;
+                width:100%;
+                button{
+                    margin-left:90px;                    
+                }
+            }
+            .video{
+                width:100%;
+                height:190px;
+                video{
+                    object-fit: cover;
+                    height:100%;
+                    width:100%;
+                }
+            }
+            .skills{
+                width:100%;
+                .text{
+                    padding:10px 10px 10px 10px;
+                    h1{
+                        margin-left: 20px;
+                    }
+                    .skills-container{
+                        margin-left: 20px;
+                        width:250px;
+                    }
+                }
+                .img{
+                    .designIcon{
+                        font-size: 50px;
+                        margin: -100px 30px 0px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
