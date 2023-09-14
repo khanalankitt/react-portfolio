@@ -669,4 +669,87 @@ nav .nav-container .socials a p:hover {
     font-size: 50px;
     margin: -100px 30px 0px 0px;
   }
+  .hero-works {
+    height: auto;
+    width: 300px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .hero-works .main {
+    height: 350px;
+    width: 300px;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .hero-works .main .image-container {
+    height: 60%;
+    width: 90%;
+    margin-top: 10px;
+  }
+  .hero-works .main .text {
+    height: 40%;
+  }
+  .hero-works .main .text h2 {
+    margin-top: -10px;
+  }
+  .hero-aboutme {
+    height: auto;
+    width: 80%;
+  }
+  .hero-aboutme .top {
+    flex-direction: column;
+  }
+  .hero-aboutme .top .aboutme-item {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .hero-aboutme .top .aboutme {
+    height: 320px;
+  }
+  .hero-aboutme .top .image {
+    height: 220px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .hero-aboutme .top .image img {
+    height: 200px;
+  }
+  .hero-aboutme .top .contact {
+    height: 200px;
+    width: 100%;
+  }
+  .hero-aboutme .top .contact button {
+    margin-left: 70px;
+  }
+  .hero-aboutme .bottom {
+    flex-direction: column;
+  }
+  .hero-aboutme .bottom .aboutme-item {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .hero-aboutme .bottom .map {
+    height: 300px;
+  }
+  .hero-aboutme .bottom .map .map-container {
+    height: 95%;
+    width: 95%;
+  }
+  .hero-aboutme .bottom .skills {
+    height: 220px;
+  }
+  .hero-aboutme .bottom .skills h1 {
+    padding-left: 20px;
+  }
+  .hero-aboutme .bottom .skills li {
+    padding-left: 40px;
+  }
+  .hero-aboutme .bottom .skills li p {
+    margin-left: 10px;
+    width: 50px;
+  }
+  .hero-aboutme .bottom .skills li .bar-container {
+    width: 50%;
+    margin-left: 60px;
+  }
 }/*# sourceMappingURL=App.css.map */

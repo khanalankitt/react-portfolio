@@ -354,8 +354,7 @@ nav{
                 iframe{
                     height:100%;
                     width:100%;
-                border-radius: inherit;
-
+                    border-radius: inherit;
                 }
             }
         }
@@ -618,6 +617,90 @@ nav{
                     .designIcon{
                         font-size: 50px;
                         margin: -100px 30px 0px 0px;
+                    }
+                }
+            }
+        }
+    }
+    .hero-works{
+        height: auto;
+        width:300px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        .main{
+            height:350px;
+            width:300px;
+            margin-top: 20px;
+            flex-direction: column;
+            .image-container{
+                height:60%;
+                width: 90%;
+                margin-top:10px;
+            }
+            .text{
+                height:40%;
+                h2{
+                    margin-top:-10px;
+                }
+            }
+        }
+    }
+    .hero-aboutme{
+        height:auto;
+        width:80%;
+        .top{
+            flex-direction: column;
+            .aboutme-item{
+                width:100%;
+                margin-top: 20px;
+            }
+            .aboutme{
+                height:320px;
+            }
+            .image{
+                height:220px;
+                width:100%;
+                margin-top: 20px;
+                    img{
+                        height:200px;
+                    }
+            }
+            .contact{
+                height:200px;
+                width:100%;
+                button{
+                    margin-left:70px;                    
+                }
+            }
+
+        }
+        .bottom{
+            flex-direction: column;
+            .aboutme-item{
+                width:100%;
+                margin-top: 20px;
+            }
+            .map{
+                height:300px;
+                .map-container{
+                    height:95%;
+                    width:95%;
+                }
+            }
+            .skills{
+                height:220px;
+                h1{
+                    padding-left: 20px;
+                }
+                li{
+                    padding-left: 40px;
+                    p{
+                        margin-left:10px;
+                        width:50px;
+                    }
+                    .bar-container{
+                        width:50%;
+                        margin-left: 60px;
                     }
                 }
             }

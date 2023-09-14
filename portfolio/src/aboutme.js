@@ -25,7 +25,12 @@ function AboutMe(){
                         </div>
                     </div>
                     <div className="contact aboutme-item">
-                        <h1>Available for <br /> work</h1>
+                        {
+                            window.innerWidth >= 768?
+                                <h1>Available for <br /> work</h1>
+                            :
+                            <h1>Available for work</h1>                        
+                        }
                         <p>Contact me, lets talk!</p>
                         <Link to="/contact">
                             <button className="button-connect">CONNECT</button>
@@ -55,8 +60,8 @@ function AboutMe(){
                     </div>
                     <div className="skills aboutme-item">
                         <h1>Skills</h1>
-                        <li>
-                            <p>HTML</p>
+                        <li>                            
+                            <p>HTML</p>                            
                             <div className="bar-container">
                                 <span className="bar html"></span>
                             </div>
