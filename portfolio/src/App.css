@@ -1,6 +1,15 @@
-body {
+html, body {
   background: #f1f1f1;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  max-width: none;
+}
+
+#root {
   margin: 0;
   padding: 0;
 }
@@ -588,7 +597,7 @@ nav .nav-container .socials a p:hover {
 @media (max-width: 768px) {
   nav {
     margin-top: 20px;
-    width: 400px;
+    width: 300px;
   }
   nav .nav-container {
     flex-direction: column;
@@ -603,22 +612,23 @@ nav .nav-container .socials a p:hover {
   }
   .hero {
     height: auto;
-    width: 350px;
+    width: 90%;
   }
   .hero .top {
-    width: 100%;
+    width: 95%;
+    margin: auto;
     justify-content: space-between;
   }
   .hero .top .hero-item {
-    width: inherit;
+    width: 100%;
     margin-top: 20px;
   }
   .hero .top .intro {
-    height: 100%;
-    width: inherit;
+    height: auto;
+    width: 100%;
   }
   .hero .top .intro h1 {
-    margin: 50px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
   }
   .hero .top .works {
     width: 48%;
@@ -664,15 +674,20 @@ nav .nav-container .socials a p:hover {
     margin-top: 20px;
   }
   .hero .bottom .contact {
-    height: 200px;
-    width: 100%;
+    height: auto;
+    width: 80%;
   }
   .hero .bottom .contact button {
-    margin-left: 90px;
+    margin-left: 40%;
+    margin-bottom: 20px;
+  }
+  .hero .bottom .contact h1 {
+    font-size: 30px;
   }
   .hero .bottom .video {
     width: 100%;
-    height: 190px;
+    height: 200px;
+    background: white;
   }
   .hero .bottom .video video {
     -o-object-fit: cover;
@@ -687,10 +702,11 @@ nav .nav-container .socials a p:hover {
     padding: 10px 10px 10px 10px;
   }
   .hero .bottom .skills .text h1 {
-    margin-left: 20px;
+    margin-left: 10px;
+    padding: 0;
   }
   .hero .bottom .skills .text .skills-container {
-    margin-left: 20px;
+    margin-left: 0px;
     width: 250px;
   }
   .hero .bottom .skills .img .designIcon {
@@ -704,7 +720,7 @@ nav .nav-container .socials a p:hover {
     flex-wrap: nowrap;
   }
   .hero-works .main {
-    height: 350px;
+    height: 390px;
     width: 300px;
     margin-top: 20px;
     flex-direction: column;
@@ -712,17 +728,17 @@ nav .nav-container .socials a p:hover {
   .hero-works .main .image-container {
     height: 60%;
     width: 90%;
-    margin-top: 10px;
+    margin-top: 0px;
   }
   .hero-works .main .text {
-    height: 40%;
+    height: auto;
   }
   .hero-works .main .text h2 {
     margin-top: -10px;
   }
   .hero-aboutme {
     height: auto;
-    width: 80%;
+    width: 90%;
   }
   .hero-aboutme .top {
     flex-direction: column;
@@ -732,7 +748,14 @@ nav .nav-container .socials a p:hover {
     margin-top: 20px;
   }
   .hero-aboutme .top .aboutme {
-    height: 320px;
+    height: auto;
+  }
+  .hero-aboutme .top .aboutme h1 {
+    padding: 0px 0px 0px 10px;
+  }
+  .hero-aboutme .top .aboutme p {
+    padding: 0px 15px 0px 15px;
+    text-align: justify;
   }
   .hero-aboutme .top .image {
     height: 220px;
@@ -743,11 +766,14 @@ nav .nav-container .socials a p:hover {
     height: 200px;
   }
   .hero-aboutme .top .contact {
-    height: 200px;
+    height: auto;
     width: 100%;
   }
   .hero-aboutme .top .contact button {
-    margin-left: 70px;
+    margin: 0px 0px 20px 25%;
+  }
+  .hero-aboutme .top .contact h1 {
+    font-size: 30px;
   }
   .hero-aboutme .bottom {
     flex-direction: column;
@@ -763,14 +789,23 @@ nav .nav-container .socials a p:hover {
     height: 95%;
     width: 95%;
   }
+  .hero-aboutme .bottom .hobbies {
+    width: 70%;
+  }
+  .hero-aboutme .bottom .hobbies .hobbies-container h1 {
+    margin-left: 20px;
+  }
+  .hero-aboutme .bottom .hobbies .hobbies-container ul {
+    margin-left: 20px;
+  }
   .hero-aboutme .bottom .skills {
     height: 220px;
   }
   .hero-aboutme .bottom .skills h1 {
-    padding-left: 20px;
+    padding-left: 15px;
   }
   .hero-aboutme .bottom .skills li {
-    padding-left: 40px;
+    padding-left: 20px;
   }
   .hero-aboutme .bottom .skills li p {
     margin-left: 10px;

@@ -11,7 +11,7 @@ export const marqueeStyles={
 function Footer() {
   return (
     //eslint-disable-next-line
-    <marquee id="marquee" scrollAmount="12" behavior="scroll" style={marqueeStyles}>
+    <marquee id="marquee" scrollamount="12" behavior="scroll" style={marqueeStyles}>
         Created by using ReactJS
     </marquee>
   )
