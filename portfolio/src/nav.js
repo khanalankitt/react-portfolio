@@ -20,7 +20,7 @@ function Nav() {
           <a href="https://www.facebook.com/khanalankitt" target="_blank" rel="noreferrer" title='Facebook'>
             <p style={{fontSize:25,fontWeight:700,}}>f</p>
           </a>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=akhanal749@gmail.com" target="_blank" rel="noreferrer" title='Gmail'>
+          <a href="mailto:akhanal749@gmail.com" target="_blank" rel="noreferrer" title='Gmail'>
             <p><FontAwesomeIcon icon="fa-solid fa-envelope" style={{color: "#363746",fontSize:20,}} /></p>
           </a>
           <a href="https://github.com/khanalankitt" target="_blank" rel="noreferrer" title='GitHub'>

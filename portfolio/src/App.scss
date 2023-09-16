@@ -486,19 +486,43 @@ nav{
 }
 
 .form-hero{
+    @include center();
+    width:100%;
     form{
+        height:460px;
+        width:500px;
+        margin:auto;
+        color:text-color;
         @include shadow;
-        height:100%;
         border-radius: 20px;
         @include center();
         .form-container{
             height:100%;
             margin-left: 10px;
             textarea{
+                padding:10px;
+                border-radius: 20px;
+                outline:none;
+                border:none;
+                margin:10px 0px 0px 0px;
                 box-shadow: 2px 1px 1px 1px $color;
             }
             input{
+                height:35px;
+                width:200px;
+                border-radius:20px;
+                outline:none;
+                border:none;
+                font-size: 14px;
+                margin:10px 0px 10px 0px;
+                padding:0px 15px 0px 15px;
                 box-shadow: 2px 1px 1px 1px $color;
+            }
+            #submit{
+                cursor:pointer;
+                font-size: 16px;
+                font-weight:500;
+                margin:20px 0px 0px 10px;
             }
         }
     }
@@ -704,6 +728,14 @@ nav{
                     }
                 }
             }
+        }
+    }
+    .form-hero{
+        margin-top: 20px;
+        @include center();
+        form{
+            width:310px;
+            margin-top:10px;
         }
     }
 }

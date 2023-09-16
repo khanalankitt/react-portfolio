@@ -537,10 +537,19 @@ nav .nav-container .socials a p:hover {
   cursor: pointer;
 }
 
+.form-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 .form-hero form {
+  height: 460px;
+  width: 500px;
+  margin: auto;
+  color: text-color;
   box-shadow: #c2c1eb 3px 3px 10px 1px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
   box-shadow: #c2c1eb 3px 3px 5px 0px, white -5px -5px 18px -1px;
-  height: 100%;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -551,10 +560,29 @@ nav .nav-container .socials a p:hover {
   margin-left: 10px;
 }
 .form-hero form .form-container textarea {
+  padding: 10px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  margin: 10px 0px 0px 0px;
   box-shadow: 2px 1px 1px 1px #c2c1eb;
 }
 .form-hero form .form-container input {
+  height: 35px;
+  width: 200px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  margin: 10px 0px 10px 0px;
+  padding: 0px 15px 0px 15px;
   box-shadow: 2px 1px 1px 1px #c2c1eb;
+}
+.form-hero form .form-container #submit {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px 0px 0px 10px;
 }
 
 @media (max-width: 768px) {
@@ -751,5 +779,15 @@ nav .nav-container .socials a p:hover {
   .hero-aboutme .bottom .skills li .bar-container {
     width: 50%;
     margin-left: 60px;
+  }
+  .form-hero {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-hero form {
+    width: 310px;
+    margin-top: 10px;
   }
 }/*# sourceMappingURL=App.css.map */
